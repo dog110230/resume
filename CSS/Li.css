@@ -1,0 +1,202 @@
+h1{
+    font-size: 64px;
+}
+h2{
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+h3{
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+/* #main{ */
+    /* display: flex; */
+/* } */
+h4{
+    font-size: 32px;
+}
+h5{
+    font-size: 28px;
+    line-height: 1.5;
+}
+h6{
+    font-size: 24px;
+    line-height: 1.5;
+}
+p{
+    font-size: 20px;
+    line-height: 1.5;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.horizontal{
+    display: flex;
+}
+#paper{
+    width: 960px;
+    margin: auto;
+    background-color: lightgray;
+}
+#headline{
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+#headline div a{
+    /* margin: 10px; */
+    /* box-sizing: border-box; */
+    border: transparent solid 5px;
+}
+
+#head{
+    margin-top: 0px;
+    display: flex;
+    background-color: lightskyblue;
+}
+#avatar{
+    width: 240px;
+    height: 240px;
+    margin: 20px;
+    background-color: white;
+}
+#avatar img{
+    width: 100%;
+    height: 100%;
+}
+#introduction{
+    width: 480px;
+    margin: 20px;
+}
+#data{
+    width: 480px;
+    background-color: lightgreen;
+}
+#contact{
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid red;
+}
+#contact p{
+    line-height: 2;
+}
+#skill{
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid red;
+}
+.skill div{
+    height: 14px;
+    width: 404px;
+    background-color: blue;
+    position: relative;
+}
+.skill div span{
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 10px;
+    background-color: orangered;
+}
+#skill1{
+    width: 70%;
+}
+#skill2{
+    width: 60%;
+}
+#skill3{
+    width: 30%;
+}
+#interest{
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid red;
+}
+#interestMain{
+    padding-top: 20px;
+    display: flex;
+    width: 100%;
+}
+#card{
+    width: 30%;
+}
+i{
+    font-size: 80px;
+}
+.fa-headphones{
+    color: darkgray;
+}
+.fa-youtube{
+    color: red;
+}
+#experience{
+    width: 480px;
+    background-color: lightgreen;
+}
+.ttpShow{
+    display: none;
+}
+#education{
+    margin: 10px;
+    padding: 10px;
+    /* margin-left: 140px; */
+    padding-left: 140px;
+    border: 1px solid red;
+    height: 200px;
+}
+#education a{
+    position: relative;
+}
+#education a::before{
+    content: '2013~2016';
+    position: absolute;
+    top: 7px;
+    left: -130px;
+    font-size: 28px;
+}
+#job{
+    margin: 10px;
+    padding: 10px;
+    /* margin-left: 140px; */
+    padding-left: 140px;
+    border: 1px solid red;
+}
+#job a{
+    position: relative;
+}
+#job a::before{
+    content: '2017~現在';
+    position: absolute;
+    top: 7px;
+    left: -130px;
+    font-size: 28px;
+}
+#ttpPanel{
+    border: 2px solid gray;
+    position: absolute;
+    background-color: white;
+    padding: 15px;
+    text-align: left;
+    width: 200px;
+    z-index: 99;
+    display: none;
+}
+
+@media (max-width : 720px) {
+    #paper{
+        width: 480px;
+    }
+    #head{
+        display: block;
+        width: 480px;
+    }
+    #avatar{
+        margin: auto;
+        box-sizing: border-box;
+    }
+    #main{
+        display: block;
+    }
+}

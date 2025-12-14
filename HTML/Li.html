@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../CSS/reset.css">
+    <link rel="stylesheet" href="../CSS/Li.css">
+</head>
+
+<body>
+    <div id="paper">
+        <div id="headline">
+            <div>
+                <h1>個人履歷</h1>
+            </div>
+            <div>
+                <!-- <a href="#">瀏覽</a> -->
+                <!-- <a href="#">編輯</a> -->
+            </div>
+        </div>
+        <div id="head">
+            <div id="avatar">
+                <img src="../Image/20251214_124813.jpg" alt="">
+            </div>
+            <div id="introduction">
+                <h2>李育璋</h2>
+                <h3>簡介：</h6>
+                    <p>1994年出生，今年31歲，於自動機械製造、維修工作8年，就職間學習PLC等軟體並升任工程師，專注於現場作業。</p>
+            </div>
+        </div>
+        <div id="main" class="horizontal">
+            <div id="data">
+                <div id="contact">
+                    <h4>訊息</h4>
+                    <div class="horizontal">
+                        <h6>電話:</h6>
+                        <p>0975-370-197</p>
+                    </div>
+                    <div class="horizontal">
+                        <h6>E-mail:</h6>
+                        <p>dog110230@gmail.com</p>
+                    </div>
+                    <h6>地址:</h6>
+                    <p>桃園市楊梅區青山三街36巷3號2樓</p>
+                </div>
+                <div id="skill">
+                    <h4>技能</h4>
+                    <div class="skill">
+                        <p>HTML</p><div><span id="skill1"></span></div>
+                    </div>
+                    <div class="skill">
+                        <p>CSS</p><div><span id="skill2"></span></div>
+                    </div>
+                    <div class="skill">
+                        <p>JavaScript</p><div><span id="skill3"></span></div>
+                    </div>
+                </div>
+                <div id="interest">
+                    <h4>興趣</h4>
+                    <div id="interestMain">
+                        <div id="card">
+                            <i class="fa-solid fa-headphones"></i><p>聽音樂</p>
+                        </div>
+                        <div id="card">
+                            <i class="fa-brands fa-youtube"></i><p>看視頻</p>
+                        </div>
+                        <div id="card">
+                            <i class="fa-solid fa-gamepad"></i><p>玩遊戲</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="experience">
+                <div id="education">
+                    <h4>學歷</h4>
+                    <a href="https://www.pccu.edu.tw">
+                        <h5>中國文化大學</h5>
+                        <span class="ttpShow">
+                            https://www.pccu.edu.tw
+                        </span>
+                    </a>
+                    <p>電機工程學系</p>
+                    <p>2013年轉入中國文化大學工學院電機工程學系二年級，於2016年畢業</p>
+                </div>
+                <div id="job">
+                    <h4>工作經驗</h4>
+                    <a href="https://www.raden.com.tw">
+                        <h5>磊登自動控制有限公司</h5>
+                        <span class="ttpShow">
+                            https://www.raden.com.tw
+                        </span>
+                    </a>
+                    <p>2017年入職，工作至今，最開始在公司內與同事們為機台各檢知、馬達等元件配置電線，並且配合出機至客戶現場復機作業以及測試、維修，而後學習電腦使用GX
+                        Work2、GT等軟體為自動機台編輯程式，並為異常狀態機台查找異常原因，修正程式BUG。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="ttpPanel"></div>
+
+    <script src="../JavaScript/jquery-1.11.3.min.js"></script>
+    <script>
+        $(function () {
+            $('a:has(.ttpShow)').mouseover(function (e) {
+                $('#ttpPanel').text($(this).children('.ttpShow').html());
+                $('#ttpPanel').css({ top: (e.pageY +20) + 'px', left: (e.pageX +10) + 'px'}).fadeIn(300);
+            }).mousemove(function (e) {
+                $('#pptPanel').css({ top: (e.pageY +20) + 'px', left: (e.pageX +10) + 'px'});
+            }).mouseout(function (e) {
+                $('#ttpPanel').fadeOut(300);
+            })
+        })
+    </script>
+</body>
+
+</html>
